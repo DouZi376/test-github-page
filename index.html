@@ -1,0 +1,23 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta  charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<title>出入生成</title>
+</head>
+<h1>输入姓名+学号</h1>
+<SCRIPT LANGUAGE="JavaScript">
+    function test(){
+        var s = document.getElementById("txt");
+        var ss = document.getElementById("txt2");
+        location.href="cr.html?"+"txt="+encodeURI(s.value)+"&txt2="+encodeURI(ss.value);
+    }
+</SCRIPT>
+<body>
+姓名
+<input type="text" id="txt">
+</br>
+学号
+<input type="text" id="txt2">
+<input type="button" value="生成" onclick="test()"/>
+
+</body>
+</html>
